@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<configuration>
+	<appSettings>
+	<!--<add key="ConnData" value="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=E:\專案\tym\App_Data\tym.mdb;"></add>-->
+    <add key="myds" value="Provider=Microsoft.Jet.OLEDB.4.0;Data Source="></add>
+    <add key="myconn" value="/App_Data/tym.mdb"></add>
+    <add key="Injection" value="',SELECT,UPDATE,INSERT,DELETE,DROP"></add>
+    <add key="FCKeditor:UserFilesPath" value="/UserFiles"/>
+    <add key="UploadPath" value="~/Upload/"/>
+    <add key="SiteDomainName" value="http://www.tym.com.tw"/>
+    <add key="MailServer" value="msa.hinet.net"/>
+    <add key="MailServerPort" value="25"/>
+    <!--帳號密碼-->
+    <add key="MailFrom" value="kc.ku@msa.hinet.net"/>
+    <!--寄信給管理者-->
+    <add key="InquiryEmail" value="smtruck@gmail.com"/>
+  </appSettings>
+  <connectionStrings/>
+  <system.web>
+    <customErrors mode="Off"/>
+    <compilation debug="true" strict="false" explicit="true">
+      <assemblies>
+        <add assembly="System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/></assemblies></compilation>
+		  <pages theme="" styleSheetTheme="">
+          <namespaces>
+            <clear/>
+            <add namespace="System"/>
+            <add namespace="System.Collections"/>
+            <add namespace="System.Collections.Specialized"/>
+            <add namespace="System.Configuration"/>
+            <add namespace="System.Text"/>
+            <add namespace="System.Text.RegularExpressions"/>
+            <add namespace="System.Web"/>
+            <add namespace="System.Web.Caching"/>
+            <add namespace="System.Web.SessionState"/>
+            <add namespace="System.Web.Security"/>
+            <add namespace="System.Web.Profile"/>
+            <add namespace="System.Web.UI"/>
+            <add namespace="System.Web.UI.WebControls"/>
+            <add namespace="System.Web.UI.WebControls.WebParts"/>
+            <add namespace="System.Web.UI.HtmlControls"/>
+          </namespaces>
+        </pages>
+      <authentication mode="Windows"/>
+	</system.web>
+</configuration>

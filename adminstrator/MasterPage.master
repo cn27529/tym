@@ -1,0 +1,48 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="adminstrator_MasterPage" %>
+<%@ Register Src="../adminstrator/Common/left.ascx" TagName="left" TagPrefix="uc1" %>
+<%@ Register Src="../adminstrator/Common/top.ascx" TagName="top" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+<title>鑫梅企業股份有限公司</title>
+<link href="images/common.css" rel="stylesheet" type="text/css">
+</head>
+<BODY leftmargin="0px" topmargin="0px">
+<uc1:Top ID="Top1" runat="server" />
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TR>
+  <TD class=location style="PADDING-LEFT: 20px; PADDING-BOTTOM: 10px; PADDING-TOP: 20px"><A href="adminstrator_login.aspx">登入</A> &gt; 管理後端首頁</TD>
+  </TR>
+  <TR>
+  <TD style="PADDING-RIGHT: 20px; PADDING-LEFT: 20px" bgColor=#d8d8d8><IMG height=1 alt=spacer src="images/spacer.gif" width=1></TD>
+  </TR>
+</TABLE>
+  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TR>
+  <TD style="PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 20px; PADDING-TOP: 15px">
+  <TABLE style="WIDTH: 100%" cellSpacing=0 cellPadding=0 border=0>
+  <TR>
+  <TD class=default style="WIDTH: 240px" vAlign=top><uc1:Left ID="Left1" runat="server" /></TD>
+          <TD class=default style="WIDTH: 8px" vAlign=top>&nbsp;</TD>
+          <TD class=default vAlign=top>
+             <form id="form1" runat="server">
+    <div>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    </form>
+	  </TD>
+	  </TR>
+      </TABLE>
+  </TD>
+  </TR>
+  </TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TR>
+<TD style="PADDING-RIGHT: 20px; PADDING-LEFT: 20px" bgColor=#d8d8d8><IMG height=1 alt=spacer src="" width=1></TD></TR>
+<TR>
+<TD height=40>&nbsp;</TD></TR>
+</TABLE>
+</BODY>
+</html>
